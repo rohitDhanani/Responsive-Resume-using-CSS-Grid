@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         /* layout */
-        .main-content{
+        .main-content {
             border: 2px solid black;
             margin: 20px auto;
             min-height: 1000px;
@@ -22,32 +24,40 @@
             display: grid;
             grid-template-columns: 300px 700px;
         }
-        section{
+
+        section {
             display: block;
         }
-        .left-section{
+
+        .left-section {
             background-color: black;
             height: 100%;
-            grid-column:span 1 ;
+            grid-column: span 1;
 
         }
-        .right-section{
-            background-color: rgb(213, 213, 213);
+
+        .right-section {
+            background-color: white;
             height: 100%;
-            grid-column:  span 2/4;;
+            grid-column: span 2/4;
+            ;
         }
+
         /* profile */
-        .left-section{
+        .left-section {
             color: white;
         }
-        .left-content{
+
+        .left-content {
             padding: 1rem;
         }
-        .profile-details{
+
+        .profile-details {
             /* text-align: center; */
             padding: 16px;
         }
-        .profile-image{
+
+        .profile-image {
             display: block;
             /* height: 200px; */
             /* width: 180px; */
@@ -55,71 +65,115 @@
             margin: auto;
             border: 5px solid white;
             border-radius: 30%;
-            
+
         }
-        .name{
+
+        .name {
             margin: 1rem;
             font-size: 1.2rem;
             font-weight: 700;
             letter-spacing: 0.02px;
             text-align: center;
         }
-        .designation{
+
+        .designation {
             margin: 1rem;
             font-size: 1rem;
             padding-bottom: 0.5rem;
             text-transform: uppercase;
             text-align: center;
-            
+
         }
-        .description{
+
+        .description {
             margin: 10px;
             padding: 1rem;
             font-size: 0.75rem;
             font-weight: 700;
             text-align: center;
         }
+
         /* contact information */
-        li{
+        li {
             list-style: none;
             display: inline-block;
         }
-        .social-media .icon{
+
+        .social-media .icon {
             padding: 0.1rem;
             margin: 2rem;
             font-size: 2rem;
         }
-        .personal-details .icon{
+
+        .personal-details .icon {
             padding: 0.1rem;
             margin: 0.2rem;
         }
 
         /* skills */
-        .skill-tittle{
+        .skill-tittle {
             text-align: center;
             padding: 1rem 0.5rem;
             text-transform: uppercase;
             font-size: 0.75rem;
             margin-top: 2rem;
         }
-        .progress-bar{
+
+        .progress-bar {
             border: 1px solid white;
             height: 4px;
             background: white;
         }
-        .skill-name{
+
+        .skill-name {
             font-size: 0.65rem;
             text-align: left;
             padding-bottom: 0.5rem;
         }
-    
 
+        /* right-section */
+        .cgpa,
+        .degree {
+            display: inline-block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .cgpa {
+            margin-left: 3%;
+            /* text-align: center; */
+        }
+
+        .school,
+        .percentage {
+            display: inline-block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        /* .percentage{
+            text-align: center;
+        } */
+       .right-section{
+        
+        padding: 5rem;
+       }
+       .right-tittle{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        color: white;
+        background-color: black;
+       }
+       .info,.items,.IOT .para{
+        margin: 1rem;
+            padding: 1rem;
+       }
     </style>
 </head>
+
 <body>
     <main class="main-content">
         <section class="left-section">
-             <div class="left-content">
+            <div class="left-content">
                 <div class="profile-details">
                     <div class="profile">
                         <img class="profile-image" src="\01.jpg" alt="Error404">
@@ -130,16 +184,21 @@
                     <p class="description">Full Stack Developer | Web Developer | Java Developer</p>
                     <div class="contact-item">
                         <div class="social-media">
-                            <li class="icon"><a target="_blank" href="https://www.linkedin.com/in/rohit-dhanani-0200721a9/"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li class="icon"><a target="_blank" href="https://github.com/rohitDhanani"><i class="fa fa-github"></i></a></li>
+                            <li class="icon"><a target="_blank"
+                                    href="https://www.linkedin.com/in/rohit-dhanani-0200721a9/"><i
+                                        class="fa fa-linkedin-square"></i></a></li>
+                            <li class="icon"><a target="_blank" href="https://github.com/rohitDhanani"><i
+                                        class="fa fa-github"></i></a></li>
                             <li class="icon"><a href=""><i class="fa fa-facebook"></i></a></li>
                             <li class="icon"><a href=""><i class="fa fa-twitter"></i></a></li>
                         </div>
                         <div class="personal-details">
                             <li class="icon"><a href=""><i class="fa fa-envelope"> </i></a> dhanani51@gmail.com</li>
                             <li class="icon"><a href=""><i class="fa fa-phone"> </i></a> +91-909963682</li>
-                            <li class="icon"><a target="_blank" href="https://www.google.com/maps/place/Ranavav,+Gujarat+360550/@21.6855204,69.7356942,14.81z/data=!4m5!3m4!1s0x3957ca3933cdb5b5:0xb472cd713e454b4b!8m2!3d21.6833775!4d69.7435857"><i class="fa fa-map-marker"> </i></a> Ranavav, Gujarat</li>
-                            
+                            <li class="icon"><a target="_blank"
+                                    href="https://www.google.com/maps/place/Ranavav,+Gujarat+360550/@21.6855204,69.7356942,14.81z/data=!4m5!3m4!1s0x3957ca3933cdb5b5:0xb472cd713e454b4b!8m2!3d21.6833775!4d69.7435857"><i
+                                        class="fa fa-map-marker"> </i></a> Ranavav, Gujarat</li>
+
                         </div>
                         <div class="skills">
                             <h2 class="skill-tittle">skills</h2>
@@ -150,11 +209,11 @@
                                     </div>
                                     <div class="skill-progress">
                                         <div class="progress-bar" style="width: 90%">
-                                           
+
                                             <!-- <progress class="progress-bar" value="92" max="100" style="width: 90%"></progress> -->
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-name">
@@ -162,10 +221,10 @@
                                     </div>
                                     <div class="skill-progress">
                                         <div class="progress-bar" style="width: 70%">
-                        
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-name">
@@ -173,10 +232,10 @@
                                     </div>
                                     <div class="skill-progress">
                                         <div class="progress-bar" style="width: 75%">
-                        
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <div class="skill-item">
                                     <div class="skill-name">
@@ -184,10 +243,10 @@
                                     </div>
                                     <div class="skill-progress">
                                         <div class="progress-bar" style="width: 80%">
-                        
+
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -195,8 +254,82 @@
                 </div>
             </div>
         </section>
-        <section class="right-section"></section>
+        <!-- right section -->
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about sec">
+                    <h2 class="right-tittle">CAREER OBJECTIVE</h2>
+                    <div class="info">
+
+                        <p class="para">To work for an organization which provide me the
+                            opportunity to improve my skills and knowledge to
+                            growth along with the organization objective.</p>
+                        </div>
+                </section>
+                <section class="education sec">
+                    <h2 class="right-tittle">ACADEMICS</h2>
+                    <div class="education-content">
+                        <div class="univetsity">
+                            <div class="degree">
+                                <h3>B. Tech Degree in ICT</h3>
+                                <p class="para">Parul Institute of Technology
+                                    Year of completion : 2020</p>
+                            </div>
+                            <div class="cgpa">
+                                <h3>CGPA</h3>
+                                <p>7.51</p>
+                            </div>
+                        </div>
+                        <div class="12th">
+                            <div class="school">
+                                <h3>12th Science from GSEB Board</h3>
+                                <p class="para">Saint Mary's school, Porbandar
+                                    Year of completion- 2016</p>
+                            </div>
+                            <div class="percentage">
+                                <h3>Percentage</h3>
+                                <p>56.14%</p>
+                            </div>
+                        </div>
+                        <div class="10th">
+                            <div class="school">
+
+                                <h3>10th from GSEB Board</h3>
+                                <p class="para">Saint Mary's school, Porbandar
+                                    Year of completion -2014</p>
+                            </div>
+                            <div class="percentage">
+                                <h3>Percentage</h3>
+                                <p>79.50%</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="project">
+                    <h2 class="right-tittle">Project</h2>
+                    <div class="IOT">
+                        <h3>IOT Based class room automation:</h3>
+                        <p class="para"><i class="fa fa-circle-o"></i> Automated system in smart way using Internet Of
+                            Things which solved the current problems related to
+                            wastage of electricity in various schools and colleges.</p>
+                    </div>
+                </section>
+                <section class="achivements">
+                    <h2 class="right-tittle">ACHIVEMENTS</h2>
+                    <div class="items">
+                        
+                        <p class="para"><i class="fa fa-circle-o"></i> “CODE RUSH” coding event organized by the Parul Institute
+                            of technology, Computer Society of India(CSI Student
+                            Branch).</p>
+                            <p class="para"><i class="fa fa-circle-o"></i> “IT: device to device communication” how modern devices
+                            talk to each other and which technologies - wired and
+                            wireless - are involved.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
 
     </main>
 </body>
+
 </html>
